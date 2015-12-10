@@ -54,7 +54,7 @@ package语句不换行，每个package语句独立成行
 2. 左大括号后换行
 3. 右大括号前换行
 4. 如果右大括号是一个语句、函数体或类的终止，则右大括号后换行; 否则不换行。例如，如果右大括号后面是else或逗号，则不换行。
-	```Java
+         ```java
 		return new MyClass() {
 		  @Override public void method() {
 		    if (condition()) {
@@ -66,12 +66,14 @@ package语句不换行，每个package语句独立成行
 		    }
 		  }
 		};
-	```
+         ```
 
 ### 空块：可以用简洁版本
 一个空的块状结构里什么也不包含，大括号可以简洁地写成{}，不需要换行。
 例外：如果它是一个多块语句的一部分(`if/else` 或 `try/catch/finally`) ，即使大括号内没内容，右大括号也要换行。
+         ```Java
 	    void doNothing() {}
+         ```
 
 ### 一行一个语句
 每个语句后要换行。
@@ -111,11 +113,13 @@ package语句不换行，每个package语句独立成行
 #### 水平对齐：不做要求
 水平对齐指的是通过增加可变数量的空格来使某一行的字符与上一行的相应字符对齐。
 这是允许的(而且在不少地方可以看到这样的代码)，但编程风格对此不做要求。即使对于已经使用水平对齐的代码，我们也不需要去保持这种风格。
+         ```Java
 	    private int x; // this is fine
 	    private Color color; // this too
 	
 	    private int   x;      // permitted, but future edits
 	    private Color color;  // may leave it unaligned
+         ```
 
 > 对齐可增加代码可读性，但它为日后的维护带来问题。考虑未来某个时候，我们需要修改一堆对齐的代码中的一行。 这可能导致原本很漂亮的对齐代码变得错位。很可能它会提示你调整周围代码的空白来使这一堆代码重新水平对齐(比如程序员想保持这种水平对齐的风格)，这就会让你做许多的无用功，增加了reviewer的工作并且可能导致更多的合并冲突。
 
@@ -133,7 +137,7 @@ package语句不换行，每个package语句独立成行
 - 需要时才声明，并尽快进行初始化。不要在一个代码块的开头把局部变量一次性都声明了(这是c语言的做法)，而是在第一次需要使用它时才声明。局部变量在声明时最好就进行初始化，或者声明后尽快进行初始化
 #### 数组
 - 数组初始化：可写成块状结构，比如，下面的写法都是OK的：
-
+         ```Java
 		    new int[] {1, 2, 3, 4, 5}       
 		
 		    new int[] {
@@ -146,6 +150,7 @@ package语句不换行，每个package语句独立成行
 		      2,
 		      3
 		    }
+         ```	    
 - 中括号是类型的一部分：`String[] args`， 而非 `String args[]`
 #### switch语句
 - 与其它块状结构一致，switch块中的内容缩进为一个 `tab`
@@ -196,14 +201,16 @@ package语句不换行，每个package语句独立成行
 ### 捕获的异常：不能忽视
 除了下面的例子，对捕获的异常不做响应是极少正确的。(典型的响应方式是打印日志)
 如果它确实是不需要在catch块中做任何响应，需要做注释加以说明：
-	        try {
+         ```Java
+         try {
 		      int i = Integer.parseInt(response);
 		      return handleNumericResponse(i);
 		    } catch (NumberFormatException ok) {
 			      // it's not numeric; that's fine, just continue
 		    }
 		    return handleTextResponse(response);
-œ
+         ```	    
+
 ### 静态成员：使用类进行调用
 使用类名调用静态的类成员，而不是具体某个对象或表达式。
 	    Foo aFoo = ...;
