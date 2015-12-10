@@ -10,7 +10,7 @@
 - [Javascript基础 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/javascript-basic.md)
 - [Javascript对象 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/javascript-objcet.md)
 - [Javascript函数 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/javascript-function.md)
-- [Backbone基础 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/backbone-basic.md)
+- [Backbone基础 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/backbone-basic.md)
 - [Learn ES2015](https://babeljs.io/docs/learn-es2015/)
 
 #### Database
