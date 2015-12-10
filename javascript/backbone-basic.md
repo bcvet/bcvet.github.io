@@ -23,6 +23,7 @@
 ### Model
 #### 定义
 `Model`为模型，包含应用程序中的数据与相关逻辑。
+
 ```javascript
 var Man = Backbone.Model.extend({
 	
@@ -31,33 +32,39 @@ var Man = Backbone.Model.extend({
 
 #### 初始化
 初始化方法会在模型被创建时被调用。相当于构造方法。
-	```javascript
-	var Man = Backbone.Model.extend({
-	        // 初始化方法
-	        initialize : function() {
-	            // 在这里进行事件绑定
-	        this.bind("change:name", function() {
-	            var name = this.get("name");
-	            alert("你改变了name属性为: " + name);
-	            });
-	        },
-	});
-	```
+
+```javascript
+var Man = Backbone.Model.extend({
+        // 初始化方法
+        initialize : function() {
+            // 在这里进行事件绑定
+        this.bind("change:name", function() {
+            var name = this.get("name");
+            alert("你改变了name属性为: " + name);
+            });
+        },
+});
+```
 
 #### 默认值
 有时页面在获取后台传递的数据前，页面可能需要展示一些默认数据，可以通过**defaults**属性设置。
-	var Man = Backbone.Model.extend({
-	        // 初始化方法
-	        defaults : {
-	        name : 'Eric',
-	            age : 28,
-	        sex : 'male'
-	    },
-	});
+```javascript
+var Man = Backbone.Model.extend({
+        // 初始化方法
+        defaults : {
+        name : 'Eric',
+            age : 28,
+        sex : 'male'
+    },
+});
+```
 
 #### get/set
-	model.get('name');
-	model.set('name', 'jintongyao');
+
+```javascript
+model.get('name');
+model.set('name', 'jintongyao');
+```
 
 调用某个模型的数据对象使用 `model.toJSON()`方法。返回的是一个包含所有实体属性的**对象**。
 
@@ -67,12 +74,15 @@ var Man = Backbone.Model.extend({
 
 #### Model的事件监听
 当Model的属性发生变化时，可以通过事件进行监听，从而触发相应的功能。这是面向对象式编程的方便之处。一般来说，可以将监听事件绑定在Model的初始化方法中。
-	initialize : function() {
-	    this.on('change', function() {
-	        var name = this.get("name");
-	        console.log('value has been changed');
-	    });
-	},
+
+```javascript
+initialize : function() {
+    this.on('change', function() {
+        var name = this.get("name");
+        console.log('value has been changed');
+    });
+},
+```
 
 #### 验证\* Backbone使用 `Model.validate()` 进行模型验证，允许在设置属性之前对属性值进行检查。默认情况下，调用 `save()` 方法或者带有 `{validate: true}`参数的方法持久化模型时，验证会被触发。
 
@@ -118,24 +128,33 @@ var Man = Backbone.Model.extend({
 
 #### View的事件
 在 `View`中，使用 `events` 属性来为el定义监听器。采用 `'eventName selector' : 'callbackFunction'` 格式。如：
-	events: {
-	        'click .toggle': 'toggleComplete',
-	        'dbclick label': 'dbClickComplete',
-	        'onblur #focus': 'focusBlur'
-	}
+
+```javascript
+events: {
+        'click .toggle': 'toggleComplete',
+        'dbclick label': 'dbClickComplete',
+        'onblur #focus': 'focusBlur'
+}
+```
 
 ### Collection
 #### 定义
 `Collection` 是 `Model` 的集合。
-	var UserList = Backbone.Collection.extend({
-	    model: User
-	});
+
+```javascript
+var UserList = Backbone.Collection.extend({
+    model: User
+});
+```
 
 #### add/remove
-	var userList = new UserLsit();
-	userList.add(user1);
-	userList.add(user2);
-	userList.remove(user2);
+
+```javascript
+var userList = new UserLsit();
+userList.add(user1);
+userList.add(user2);
+userList.remove(user2);
+```
 
 #### 检索Model
 根据id检索，直接调用 `get()` 方法即为按id检索。
@@ -147,12 +166,15 @@ var Man = Backbone.Model.extend({
 	- `add` 新增
 	- `remove` 删除
 与`model` 一样，使用 `on` 进行绑定。
-	this.on('add', function(user) {
-	    console.log('added:' + user.get('name'));
-	});
-	this.on('change', function(user) {
-	    console.log('changed:' + user.get('name'));
-	});
+
+```javascript
+this.on('add', function(user) {
+    console.log('added:' + user.get('name'));
+});
+this.on('change', function(user) {
+    console.log('changed:' + user.get('name'));
+});
+```
 
 > `Model` 与 `Collection` 不能使用 `events` 属性。
 
@@ -190,31 +212,66 @@ backbone通过 `Model`的 `urlRoot` 属性或者是`Collection`的 `url` 属性�
 `underscore.js` 在不扩展任何js的原生对象的情况下提供很多实用的功能。它弥补了部分 `jQuery` 没有实现的功能，同时又是Backbone必不可少的部分。`underscore` 也针对模型和集合，提供了数组，对象，事件的常用方法。
 
 ##### 模板
-	var temp = _.template('<div class="<%=className%>" id="<%=id%>"><%=name%></div>');
-	var str = temp(obj);
+
+```javascript
+var temp = _.template('<div class="<%=className%>" id="<%=id%>"><%=name%></div>');
+var str = temp(obj);
+```
+
 ##### 时间戳
 原来的取法：
-	var seconds = _.now();
+
+```javascript
+var seconds = _.now();
+```
+
 `underscore.js`的取法：
-	_.now()
+
+```javascript
+_.now()
+```
+
 ##### 随机数
 我要随机数，而且是整数
-	parseInt(Math.random()*100)
+
+```javascript
+parseInt(Math.random()*100)
+```
+
 如果改一下，要1到100的整数？
-	_.random(1,100)
+
+```javascript
+_.random(1,100)
+```
+
 #### 对象比较
 如何比较两个对象是否相等？
-	_.isEqual(obj, _obj);
+
+```javascript
+_.isEqual(obj, _obj);
+```
+
 #### pick/omit
 服务器返回的结果可能是这样的：
-> var old = {k1: v1, k2: v2, k3: v3, k4: v4, k5: v5};
+
+```javascript
+var old = {k1: v1, k2: v2, k3: v3, k4: v4, k5: v5};
+```
+
 我们需要的可能是这样的：
-> var new = {k1: old.k1, k3: old.k3};
+
+```javascript
+var new = {k1: old.k1, k3: old.k3};
+```
 - `omit()`: 过滤出除模型特定属性以外的属性值
 - `pick`: 过滤出模型特定属性的值
  使用 `underscore.js` 处理：
+
+```javascript
 	var new1 = _.pick(old, 'k1', 'k3');
 	var new2 = _.omit(old, 'k2', 'k4', 'k5');
+```
+
 过滤得多就用pick，复制得多就用omit。
 #### extend
 > var info = {id:1, name:'jack', sex: 'male', age: '22'};
@@ -280,7 +337,10 @@ backbone通过 `Model`的 `urlRoot` 属性或者是`Collection`的 `url` 属性�
 #### groupBy
 通过模型属性将集合进行分组。
 #### Collection中继承的underscore方法
-> var methods = ['forEach', 'each', 'map', 'collect', 'reduce', 'foldl','inject', 'reduceRight', 'foldr', 'find', 'detect', 'filter', 'select','reject', 'every', 'all', 'some', 'any', 'include', 'contains', 'invoke','max', 'min', 'toArray', 'size', 'first', 'head', 'take', 'initial', 'rest','tail', 'drop', 'last', 'without', 'difference', 'indexOf', 'shuffle','lastIndexOf', 'isEmpty', 'chain', 'sample']();
+
+```javascript
+var methods = ['forEach', 'each', 'map', 'collect', 'reduce', 'foldl','inject', 'reduceRight', 'foldr', 'find', 'detect', 'filter', 'select','reject', 'every', 'all', 'some', 'any', 'include', 'contains', 'invoke','max', 'min', 'toArray', 'size', 'first', 'head', 'take', 'initial', 'rest','tail', 'drop', 'last', 'without', 'difference', 'indexOf', 'shuffle','lastIndexOf', 'isEmpty', 'chain', 'sample']();
+```
 
 ---- 
 
