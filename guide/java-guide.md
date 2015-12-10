@@ -57,15 +57,15 @@ package语句不换行，每个package语句独立成行
 
  ```java
  return new MyClass() {
-	@Override public void method() {
-		if (condition()) {
-			try {
-	        		something();
-	      		} catch (ProblemException e) {
-	        		recover();
-	      		}
-	    	}
-  	}
+ 	@Override public void method() {
+ 		if (condition()) {
+ 			try {
+ 				something();
+ 			} catch (ProblemException e) {
+ 				recover();
+ 			}
+ 		}
+ 	}
  };
  ```
 
@@ -145,14 +145,14 @@ private Color color;  // may leave it unaligned
  new int[] {1, 2, 3, 4, 5}       
 
  new int[] {
-	0, 1, 2, 3 
+ 	0, 1, 2, 3 
  }
 
  new int[] {
-	0,
-	1,
-	2,
-	3	
+ 	0,
+ 	1,
+ 	2,
+ 	3
  }
  ```
  
