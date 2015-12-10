@@ -330,7 +330,7 @@ _.each(arr, function(obj, index){
 #### 累加求和
 
 ```javascript
-	var count = 0;
+var count = 0;
 for(var i=0;i<i<arr.length;i++){
     count += arr[i].price;
 }
@@ -348,12 +348,14 @@ _.filter([-1, 2, -3, -4, 5, 6], function(num){
 });
 ```
 > ==\> [2, 5, 6]()
+
 #### 抽取
 
 ```javascript
 _.pluck([{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}], 'name');
 ```
 > ==\> ["moe", "larry", "curly"]()
+
 #### 排序
 不传函数的情况下按大小排序，传函数的情况下可以通过计算结果对原数组排序
 
