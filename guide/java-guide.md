@@ -54,19 +54,20 @@ package语句不换行，每个package语句独立成行
 2. 左大括号后换行
 3. 右大括号前换行
 4. 如果右大括号是一个语句、函数体或类的终止，则右大括号后换行; 否则不换行。例如，如果右大括号后面是else或逗号，则不换行。
-         ```Java
-		return new MyClass() {
-		  @Override public void method() {
-		    if (condition()) {
-		      try {
-		        something();
-		      } catch (ProblemException e) {
-		        recover();
-		      }
-		    }
-		  }
-		};
-         ```
+
+ ```java
+	return new MyClass() {
+	  @Override public void method() {
+	    if (condition()) {
+	      try {
+	        something();
+	      } catch (ProblemException e) {
+	        recover();
+	      }
+	    }
+	  }
+	};
+ ```
 
 ### 空块：可以用简洁版本
 一个空的块状结构里什么也不包含，大括号可以简洁地写成{}，不需要换行。
