@@ -23,10 +23,11 @@
 ### Model
 #### 定义
 `Model`为模型，包含应用程序中的数据与相关逻辑。
-
-	var Man = Backbone.Model.extend({
+```javascript
+var Man = Backbone.Model.extend({
 	
-	});
+});
+```
 
 #### 初始化
 初始化方法会在模型被创建时被调用。相当于构造方法。
