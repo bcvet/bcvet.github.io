@@ -23,6 +23,7 @@
 ### Model
 #### 定义
 `Model`为模型，包含应用程序中的数据与相关逻辑。
+
 	var Man = Backbone.Model.extend({
 	
 	});
