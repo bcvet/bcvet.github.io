@@ -66,8 +66,7 @@ var Student = function(name, sex) {
 	this.sex = sex || "boy";
 	this.class = "class1";
 	this.aboutMe = function() {
-		console.log("My name is:" + this.name + ",
-			I am a " + this.sex);
+		console.log("My name is:" + this.name + ", I am a " + this.sex);
 	}
 }
 
