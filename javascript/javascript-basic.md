@@ -2,6 +2,7 @@
 先看如下两个例子，判断一下运行结果。
 
 1.
+
 	var myVal = "my value";
 	function test() {
 	    console.log(myVal);
@@ -10,6 +11,7 @@
 	test();
 
 2.
+
 	function printName() {
 		return this.yourName;
 	}
