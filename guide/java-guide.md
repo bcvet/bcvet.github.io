@@ -56,7 +56,7 @@ package语句不换行，每个package语句独立成行
 4. 如果右大括号是一个语句、函数体或类的终止，则右大括号后换行; 否则不换行。例如，如果右大括号后面是else或逗号，则不换行。
 
  ```java
-return new MyClass() {
+ return new MyClass() {
 	@Override public void method() {
 		if (condition()) {
 			try {
@@ -66,7 +66,7 @@ return new MyClass() {
 	      		}
 	    	}
   	}
-};
+ };
  ```
 
 ### 空块：可以用简洁版本
@@ -142,18 +142,18 @@ private Color color;  // may leave it unaligned
 - 数组初始化：可写成块状结构，比如，下面的写法都是OK的：
 
  ```Java
-new int[] {1, 2, 3, 4, 5}       
+ new int[] {1, 2, 3, 4, 5}       
 
-new int[] {
+ new int[] {
 	0, 1, 2, 3 
-}
+ }
 
-new int[] {
+ new int[] {
 	0,
 	1,
 	2,
 	3	
-}
+ }
  ```
  
 - 中括号是类型的一部分：`String[] args`， 而非 `String args[]`
