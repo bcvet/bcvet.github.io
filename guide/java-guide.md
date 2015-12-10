@@ -56,17 +56,17 @@ package语句不换行，每个package语句独立成行
 4. 如果右大括号是一个语句、函数体或类的终止，则右大括号后换行; 否则不换行。例如，如果右大括号后面是else或逗号，则不换行。
 
  ```java
-	return new MyClass() {
-	  @Override public void method() {
-	    if (condition()) {
-	      try {
-	        something();
-	      } catch (ProblemException e) {
-	        recover();
-	      }
-	    }
-	  }
-	};
+return new MyClass() {
+	@Override public void method() {
+		if (condition()) {
+			try {
+	        		something();
+	      		} catch (ProblemException e) {
+	        		recover();
+	      		}
+	    	}
+  	}
+};
  ```
 
 ### 空块：可以用简洁版本
@@ -74,7 +74,7 @@ package语句不换行，每个package语句独立成行
 例外：如果它是一个多块语句的一部分(`if/else` 或 `try/catch/finally`) ，即使大括号内没内容，右大括号也要换行。
 
  ```Java
-    void doNothing() {}
+void doNothing() {}
  ```
 
 ### 一行一个语句
@@ -117,11 +117,11 @@ package语句不换行，每个package语句独立成行
 这是允许的(而且在不少地方可以看到这样的代码)，但编程风格对此不做要求。即使对于已经使用水平对齐的代码，我们也不需要去保持这种风格。
 
  ```Java
-    private int x; // this is fine
-    private Color color; // this too
+private int x; // this is fine
+private Color color; // this too
 
-    private int   x;      // permitted, but future edits
-    private Color color;  // may leave it unaligned
+private int   x;      // permitted, but future edits
+private Color color;  // may leave it unaligned
  ```
 
 > 对齐可增加代码可读性，但它为日后的维护带来问题。考虑未来某个时候，我们需要修改一堆对齐的代码中的一行。 这可能导致原本很漂亮的对齐代码变得错位。很可能它会提示你调整周围代码的空白来使这一堆代码重新水平对齐(比如程序员想保持这种水平对齐的风格)，这就会让你做许多的无用功，增加了reviewer的工作并且可能导致更多的合并冲突。
@@ -142,18 +142,18 @@ package语句不换行，每个package语句独立成行
 - 数组初始化：可写成块状结构，比如，下面的写法都是OK的：
 
  ```Java
-	    new int[] {1, 2, 3, 4, 5}       
-	
-	    new int[] {
-	        0, 1, 2, 3 
-	    }
-	
-	    new int[] {
-	      0,
-	      1,
-	      2,
-	      3
-	    }
+new int[] {1, 2, 3, 4, 5}       
+
+new int[] {
+	0, 1, 2, 3 
+}
+
+new int[] {
+	0,
+	1,
+	2,
+	3	
+}
  ```
  
 - 中括号是类型的一部分：`String[] args`， 而非 `String args[]`
@@ -209,12 +209,12 @@ package语句不换行，每个package语句独立成行
 
  ```Java
  try {
-	      int i = Integer.parseInt(response);
-	      return handleNumericResponse(i);
-	    } catch (NumberFormatException ok) {
-		      // it's not numeric; that's fine, just continue
-	    }
-	    return handleTextResponse(response);
+	int i = Integer.parseInt(response);
+	return handleNumericResponse(i);
+ } catch (NumberFormatException ok) {
+	// it's not numeric; that's fine, just continue
+ }
+ return handleTextResponse(response);
  ```
 
 ### 静态成员：使用类进行调用
