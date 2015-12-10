@@ -277,57 +277,98 @@ var new = {k1: old.k1, k3: old.k3};
 > var info = {id:1, name:'jack', sex: 'male', age: '22'};
 > var score = {id:1, math:88, biology:64, chinese: 55};
 要把个人信息和成绩合并怎么办？
-	var student = _.extend(info, score);
+
+```javascript
+var student = _.extend(info, score);
+```
+
 #### map
 使用传统JS遍历对象：
-	function(obj){
-	    for(var e in obj){
-	        //...
-	    }
-	}
+
+```javascript
+function(obj){
+    for(var e in obj){
+        //...
+    }
+}
+```
+
 使用 `underscore`：
-	_.map(obj,function(){value, key}{
-	    //...
-	});
-	collection.each(function(value) {
-		console.log(value);
-	})
+
+```javascript
+_.map(obj,function(){value, key}{
+    //...
+});
+collection.each(function(value) {
+	console.log(value);
+})
+```
+
 #### 合并数组
 如何合并多个数组并去重？
-	_.union([1, 2, 3], [101, 2, 1, 10], [2, 1]);
+
+```javascript
+_.union([1, 2, 3], [101, 2, 1, 10], [2, 1]);
+```
 > ==\> [1, 2, 3, 101, 10]()
+
 #### 快速获得一个整数数组
-	var arr = _.range(1,100);
+
+```javascript
+var arr = _.range(1,100);
+```
+
 #### each
-	_.each(arr, function(obj, index){
-	    console.log(index);
-	    console.log(obj);
-	});
+
+```javascript
+_.each(arr, function(obj, index){
+    console.log(index);
+    console.log(obj);
+});
+```
+
 #### 累加求和
+
+```javascript
 	var count = 0;
-	for(var i=0;i<i<arr.length;i++){
-	    count += arr[i].price;
-	}
-	
-	var count = _.reduce([{name:'x', price:10}, {name:'y', price:20}], function(memo, item){ 
-	    return memo + item.price; 
-	}, 0);
+for(var i=0;i<i<arr.length;i++){
+    count += arr[i].price;
+}
+
+var count = _.reduce([{name:'x', price:10}, {name:'y', price:20}], function(memo, item){ 
+    return memo + item.price; 
+}, 0);
+```
+
 #### 过滤
-	_.filter([-1, 2, -3, -4, 5, 6], function(num){ 
-	        return num > 0; 
-	});
+
+```javascript
+_.filter([-1, 2, -3, -4, 5, 6], function(num){ 
+	return num > 0; 
+});
+```
 > ==\> [2, 5, 6]()
 #### 抽取
-	_.pluck([{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}], 'name');
+
+```javascript
+_.pluck([{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}], 'name');
+```
 > ==\> ["moe", "larry", "curly"]()
 #### 排序
 不传函数的情况下按大小排序，传函数的情况下可以通过计算结果对原数组排序
-	_.sortBy([1, 2, 3, -4, 5, 6]);
+
+```javascript
+_.sortBy([1, 2, 3, -4, 5, 6]);
+```
 > ==\> [-4,1,2,3,5,6]()
-	_.sortBy([1, 2, 3, -4, 5, 6], function(num){ 
-	    return num*num
-	});
+
+```javascript
+_.sortBy([1, 2, 3, -4, 5, 6], function(num){ 
+    return num*num
+});
+```
 > ==\> [1, 2, 3, -4, 5, 6]()
+
 #### indexOf()
 返回集合中特定索引位置的模型。
 #### min()/max()
