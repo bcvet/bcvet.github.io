@@ -7,7 +7,7 @@
 - [Java课程COOL](http://wiki.jikexueyuan.com/project/java-course/)
 
 #### Javascript
-- [开发逻辑约定](百年视野)(https://github.com/bcvet/bcvet.github.io/blob/master/guide/dev-guide.md)
+- [开发逻辑约定(百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/dev-guide.md)
 - [Javascript基础 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/javascript-basic.md)
 - [Javascript对象 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/javascript-objcet.md)
 - [Javascript函数 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/javascript-function.md)
