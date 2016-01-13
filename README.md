@@ -20,7 +20,7 @@
 - [Java代码规范 (百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/java-guide.md)
 - [Javascript代码规范 (百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/javascript-guide.md)
 - [React代码规范 (百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/react-guide.md)
-
+- [rest规范(百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/rest.md)
 #### Other
 - [Webpack傻瓜式指南](https://github.com/vikingmute/webpack-for-fools)
 - [eslintrc](https://github.com/bcvet/bcvet.github.io/blob/master/other/eslintrc.js)
