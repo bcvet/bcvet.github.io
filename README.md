@@ -16,6 +16,7 @@
 #### Database
 
 #### Guide
+- [现代化前端开发模式的构建](https://github.com/bcvet/bcvet.github.io/blob/master/guide/construct-morden-frontend.md)
 - [开发逻辑约定(百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/dev-guide.md)
 - [Java代码规范 (百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/java-guide.md)
 - [Javascript代码规范 (百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/javascript-guide.md)
