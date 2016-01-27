@@ -1,7 +1,7 @@
 # 现代化前端开发模式的构建
-现代化前端开发,应该具备 `模块化`,`组件化`,`工程化` 三个特点,我们目标,就是通过组合各种开源技术,构建出符合上述特点,又适合自己团队的前端开发技术栈.
+现代化前端开发,应该具备**模块化**,**组件化**,**工程化**三个特点,我们目标,就是通过组合各种开源技术,构建出符合上述特点,又适合自己团队的前端开发技术栈.
 
-新版本的开发中,不再考虑对 `ie8` 浏览器的支持,为开发带来了很大的方便.
+新版本的开发中,不再考虑对`ie8`浏览器的支持,为开发带来了很大的方便.
 新版本开发中,能够全面使用基于`HTML5`的技术进行开发,预期使用的主要技术有: `HTML5`,`CSS3`,`React`,`webpack`,`es6`.
 
 ---
@@ -185,17 +185,22 @@ HTML5的重大特性有:
 ### HTML5
 [w3school的HTML5教程](http://www.w3school.com.cn/html5/)
 [Is IE9 a modern browser?](https://people.mozilla.org/~prouget/ie9/)
+
 ### React
 [React官方文档中文版](http://reactjs.cn/react/docs/getting-started.html)
+
 ### Webpack
 [Webpack傻瓜式指南（一）](http://zhuanlan.zhihu.com/FrontendMagazine/20367175)
 [Webpack傻瓜式指南（二）](http://zhuanlan.zhihu.com/FrontendMagazine/20397902)
+
 ### ES6
 [ECMAScript 6入门](http://es6.ruanyifeng.com/)
+
 ### 前端工程化
 [前端工程-基础篇](https://github.com/fouber/blog/issues/10)
 [浅谈前端集成解决方案 #1](https://github.com/fouber/blog/issues/1)
 [前端开发体系建设日记 #2](https://github.com/fouber/blog/issues/2)
 [基于webpack搭建前端工程解决方案探索 #10](	https://github.com/chemdemo/chemdemo.github.io/issues/10)
+
 ### 扔掉jQuery
 [You don’t need jQuery](https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README.zh-CN.md)
