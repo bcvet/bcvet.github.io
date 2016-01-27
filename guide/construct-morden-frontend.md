@@ -49,11 +49,14 @@ HTML5的重大特性有:
 #### React
 `React`技术本身,是一种使用组件化思路实现的**表现层**框架,主要用于页面渲染.`React`的入门比较简单,但是易学难精,需要多看官方文档,并慢慢总结一些最佳实践.
 理解`React`的思想:**组件就是状态机. UI = f(state) **.
+
 ![用组件化思考](https://raw.githubusercontent.com/bcvet/bcvet.github.io/master/img/morden-frontend/thinking-in-react-components.png)
+
 用好`React`,主要在于三个问题的思考:
 - 如何(以什么粒度)拆分组件?
 - 组件与组件之间的关系是什么?(父子?兄弟?无关联?)
 - 组件之间如何通信?
+
 ![复杂的层级关系](https://raw.githubusercontent.com/bcvet/bcvet.github.io/master/img/morden-frontend/react-tree.png)
 
 #### React-Router
@@ -123,7 +126,9 @@ HTML5的重大特性有:
 
 ### 目录结构与资源目录的划分
 原来的状态为将所有资源都放到同一文件夹下,然后先按种类分类,再按业务模块分类.
+
 ![按模块分层的结构](https://raw.githubusercontent.com/bcvet/bcvet.github.io/master/img/dir-struct.png)
+
 理想状态参见[前端工程-基础篇](https://github.com/fouber/blog/issues/10)一文.
 当前状态详见手机版目录结构分析.
 未来状态取决于css是否可以按组件抽取.
@@ -181,5 +186,3 @@ HTML5的重大特性有:
 [基于webpack搭建前端工程解决方案探索 #10](	https://github.com/chemdemo/chemdemo.github.io/issues/10)
 ### 扔掉jQuery
 [You don’t need jQuery](https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README.zh-CN.md)
-
-
