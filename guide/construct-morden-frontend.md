@@ -18,6 +18,7 @@ HTML5的重大特性有:
 - WebSocket.可以方便构建实时web应用.
 
 `ie9`对于HTML5的支持并不全面,只支持部分特性.如果使用了不支持的特性,可以使用`html5shiv`使ie9支持.
+
 	<!--[if lt IE 9]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -198,5 +199,3 @@ HTML5的重大特性有:
 [基于webpack搭建前端工程解决方案探索 #10](	https://github.com/chemdemo/chemdemo.github.io/issues/10)
 ### 扔掉jQuery
 [You don’t need jQuery](https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README.zh-CN.md)
-
-
