@@ -24,7 +24,9 @@ HTML5的重大特性有:
 
 ### React(体系)
 `React`是当前诸多前端框架中的一种.与其他前端框架相比,`React`最大的特点就是`组件化`开发模式.(另外一个组件化实现比较好的框架是`Vue`).
+
 以`React`技术为基础,形成了一套完整的**开源技术体系**.
+
 `React` + `React-Router` + `redux`是当前最为主流的组合.
 
 `React`的优点(使用React的原因)
@@ -48,6 +50,7 @@ HTML5的重大特性有:
 
 #### React
 `React`技术本身,是一种使用组件化思路实现的**表现层**框架,主要用于页面渲染.`React`的入门比较简单,但是易学难精,需要多看官方文档,并慢慢总结一些最佳实践.
+
 理解`React`的思想:**组件就是状态机. UI = f(state) **.
 
 ![用组件化思考](https://raw.githubusercontent.com/bcvet/bcvet.github.io/master/img/morden-frontend/thinking-in-react-components.png)
@@ -64,6 +67,7 @@ HTML5的重大特性有:
 
 #### FLUX与flux/redux
 `FLUX`是facebook公司提供的一种数据流模型.与传统的`MVC`数据流模型不同的是,`FLUX`为单向数据流,在复杂状态下,不会出现未知情况.从现实的角度来说,`FLUX`的出现就是为了解决上文中出现的复杂组件的通信问题.
+
 `flux`为facebook官方的实现,较为复杂.`redux`更为简化,是目前被广泛采用的`flux-like`库.
 
 ### Webpack
@@ -86,8 +90,11 @@ HTML5的重大特性有:
 
 ### ES6/ES2015
 `ES6`为最新版的`ECMA-Script标准`.与`ES3` - `ES5`的变化相比,`ES6`的变化是巨大且有实质性的的,因此广受欢迎并被快速推广.
+
 目前主流浏览器对`ES6`的支持还非常有限.基于这种现状,出现了`babel`,**用于将ES6代码编译为ES5代码并在浏览器中执行**,为使用es6编写代码提供了可能.
+
 但本质上来说,`ES6`并没有改变原有的代码编写思想,只是在原来的JavaScript语言基础上提供了更多的**语法糖**,属于锦上添花,不强制使用,可以选择性使用,提高开发效率与代码可读性.在我们的开发中,`ES6`并非核心技术,只是基于`ES6`的`import`与`export`实现`模块化`.
+
 目前的工程中,已经成功将`babel`集成至`webpack`中,提供了`ES6`的使用环境,可以使用`ES6`进行开发.
 
 建议开发时使用的`ES6`特性:
@@ -130,15 +137,19 @@ HTML5的重大特性有:
 ![按模块分层的结构](https://raw.githubusercontent.com/bcvet/bcvet.github.io/master/img/dir-struct.png)
 
 理想状态参见[前端工程-基础篇](https://github.com/fouber/blog/issues/10)一文.
-当前状态详见手机版目录结构分析.
+
+当前状态详见`手机版目录结构`.
+
 未来状态取决于css是否可以按组件抽取.
 
 ### 开发规范
 开发规范使用`Airbnb的JavaScript代码规范`(此规范目前基本为通用规范),使用`es-lint`插件进行规范自动检测.
-具体使用规则参见公司技术网站.
+
+具体使用规则参见[公司技术网站](http://bcvet.github.io/).
 
 ### 关于jQuery
 在传统的以操作DOM为基础的开发模式中,`jQuery`为开发的核心技术.
+
 主要提供了如下几大功能:
 	1. DOM查询
 	2. DOM操作
@@ -152,20 +163,21 @@ HTML5的重大特性有:
 	- 减少JavaScript代码库体积.
 
 对于AJAX操作,可以使用专门的AJAX库.
+
 对于工具方法,以`lodash`库为基础,积累自己的工具库.
+
 第三方插件,在`npm`和`github`中寻找相应的替代工具.
 
 总的原则是,逐步减少对`jQuery`依赖,直到完全抛弃`jQuery`.
 
 ### 回顾并检测生态系统的闭环
 试图使用当前技术体系,满足[前端开发体系建设日记 #2](https://github.com/fouber/blog/issues/2)中提出的场景需求.
+
 ![工程化实践](https://raw.githubusercontent.com/bcvet/bcvet.github.io/master/img/morden-frontend/production-practice.png)
 
 ### 可能遇到的问题
-
-#### 组件如何划分
-
-#### css如何做?组件化做到什么程度?
+- 组件如何划分?
+- css如何做?组件化做到什么程度?
  
 ---
 ## 参考资料
@@ -186,3 +198,5 @@ HTML5的重大特性有:
 [基于webpack搭建前端工程解决方案探索 #10](	https://github.com/chemdemo/chemdemo.github.io/issues/10)
 ### 扔掉jQuery
 [You don’t need jQuery](https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README.zh-CN.md)
+
+
