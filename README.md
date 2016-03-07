@@ -20,6 +20,7 @@
 - [FLUX与Redux](https://github.com/bcvet/bcvet.github.io/blob/master/other/fluxandredux.md)
 
 #### Guide
+- [bnsy框架使用文档（百年视野）](https://github.com/bcvet/bcvet.github.io/blob/master/guide/bnsy-guide.md)
 - [现代化前端开发模式的构建](https://github.com/bcvet/bcvet.github.io/blob/master/guide/construct-morden-frontend.md)
 - [开发逻辑约定(百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/dev-guide.md)
 - [Java代码规范 (百年视野)](https://github.com/bcvet/bcvet.github.io/blob/master/guide/java-guide.md)
