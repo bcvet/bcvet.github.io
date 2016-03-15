@@ -14,6 +14,14 @@
 - [Backbone基础 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/backbone-basic.md)
 - [Learn ES2015](https://babeljs.io/docs/learn-es2015/)
 
+#### Chrome控制台使用完全手册
+- [Chrome开发者工具不完全指南（一、基础功能篇）](http://www.cnblogs.com/constantince/p/4565261.html)
+- [Chrome开发者工具不完全指南（二、进阶篇）](http://www.cnblogs.com/constantince/p/4579121.html)
+- [Chrome开发者工具不完全指南（三、性能篇）](http://www.cnblogs.com/constantince/p/4585983.html)
+- [Chrome开发者工具不完全指南（四、性能进阶篇）](http://www.cnblogs.com/constantince/p/4607497.html)
+- [Chrome开发者工具不完全指南（五、移动篇）](http://www.cnblogs.com/constantince/p/4624241.html)
+- [Chrome开发者工具不完全指南（六、插件篇）](http://www.cnblogs.com/constantince/p/4641796.html)
+
 #### Database
 
 #### React
