@@ -26,6 +26,7 @@
 
 #### React
 - [FLUX与Redux](https://github.com/bcvet/bcvet.github.io/blob/master/other/fluxandredux.md)
+- [在项目中使用Redux-devtools](https://github.com/bcvet/bcvet.github.io/blob/master/other/redux-devtools.md)
 
 #### Guide
 - [bnsy框架使用文档（百年视野）](https://github.com/bcvet/bcvet.github.io/blob/master/guide/bnsy-guide.md)
