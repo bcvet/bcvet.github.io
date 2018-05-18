@@ -14,6 +14,7 @@
 - [Javascript对象 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/javascript-objcet.md)
 - [Javascript函数 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/javascript-function.md)
 - [Javascript数组对象 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/javascript-array.md)
+- [Javascript的异步-事件循环与Promise (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/Javasript%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5.md)
 - [Backbone基础 (from技术分享)](https://github.com/bcvet/bcvet.github.io/blob/master/javascript/backbone-basic.md)
 - [Learn ES2015](https://babeljs.io/docs/learn-es2015/)
 
